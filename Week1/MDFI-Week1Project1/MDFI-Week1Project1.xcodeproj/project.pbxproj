@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E309E25E16E83A6400D42A5F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4142316E6BBAF0027E66F /* ViewController.m */; };
 		E3E4140B16E6BBAF0027E66F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E4140A16E6BBAF0027E66F /* UIKit.framework */; };
 		E3E4140D16E6BBAF0027E66F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E4140C16E6BBAF0027E66F /* Foundation.framework */; };
 		E3E4140F16E6BBAF0027E66F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E4140E16E6BBAF0027E66F /* CoreGraphics.framework */; };
@@ -16,7 +17,6 @@
 		E3E4141D16E6BBAF0027E66F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E4141C16E6BBAF0027E66F /* Default.png */; };
 		E3E4141F16E6BBAF0027E66F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E4141E16E6BBAF0027E66F /* Default@2x.png */; };
 		E3E4142116E6BBAF0027E66F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E4142016E6BBAF0027E66F /* Default-568h@2x.png */; };
-		E3E4142416E6BBAF0027E66F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4142316E6BBAF0027E66F /* ViewController.m */; };
 		E3E4142716E6BBAF0027E66F /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E4142516E6BBAF0027E66F /* ViewController_iPhone.xib */; };
 		E3E4143916E81C7F0027E66F /* movies.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E4143816E81C7E0027E66F /* movies.png */; };
 		E3E4143B16E81C8A0027E66F /* retina_movies.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E4143A16E81C8A0027E66F /* retina_movies.png */; };
@@ -195,9 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E309E25E16E83A6400D42A5F /* ViewController.m in Sources */,
 				E3E4141716E6BBAF0027E66F /* main.m in Sources */,
 				E3E4141B16E6BBAF0027E66F /* AppDelegate.m in Sources */,
-				E3E4142416E6BBAF0027E66F /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

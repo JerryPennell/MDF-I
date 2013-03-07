@@ -15,7 +15,10 @@
     IBOutlet UITableView *tableView;
     
     //Static array of information
-    NSArray *stringArray;
+    NSMutableArray *stringArray;
+    
+    IBOutlet UIButton *editButton;
+    
 }
 
 @end
