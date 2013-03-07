@@ -18,7 +18,8 @@
 		E3E4142116E6BBAF0027E66F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E4142016E6BBAF0027E66F /* Default-568h@2x.png */; };
 		E3E4142416E6BBAF0027E66F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4142316E6BBAF0027E66F /* ViewController.m */; };
 		E3E4142716E6BBAF0027E66F /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E4142516E6BBAF0027E66F /* ViewController_iPhone.xib */; };
-		E3E4142A16E6BBAF0027E66F /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E4142816E6BBAF0027E66F /* ViewController_iPad.xib */; };
+		E3E4143916E81C7F0027E66F /* movies.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E4143816E81C7E0027E66F /* movies.png */; };
+		E3E4143B16E81C8A0027E66F /* retina_movies.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E4143A16E81C8A0027E66F /* retina_movies.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +39,15 @@
 		E3E4142216E6BBAF0027E66F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E3E4142316E6BBAF0027E66F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E3E4142616E6BBAF0027E66F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		E3E4142916E6BBAF0027E66F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		E3E4143016E816530027E66F /* movies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movies.png; sourceTree = "<group>"; };
+		E3E4143216E816D30027E66F /* retina_movies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retina_movies.png; sourceTree = "<group>"; };
+		E3E4143416E819550027E66F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E3E4143616E81A420027E66F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E3E4143816E81C7E0027E66F /* movies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movies.png; sourceTree = "<group>"; };
+		E3E4143A16E81C8A0027E66F /* retina_movies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retina_movies.png; sourceTree = "<group>"; };
+		E3E4143C16E81C970027E66F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E3E4143E16E81CA50027E66F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E3E4144016E81CB40027E66F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,15 @@
 		E3E413FE16E6BBAF0027E66F = {
 			isa = PBXGroup;
 			children = (
+				E3E4144016E81CB40027E66F /* Default@2x.png */,
+				E3E4143E16E81CA50027E66F /* Default-568h@2x.png */,
+				E3E4143C16E81C970027E66F /* Default.png */,
+				E3E4143A16E81C8A0027E66F /* retina_movies.png */,
+				E3E4143816E81C7E0027E66F /* movies.png */,
+				E3E4143616E81A420027E66F /* Default@2x.png */,
+				E3E4143416E819550027E66F /* Default.png */,
+				E3E4143216E816D30027E66F /* retina_movies.png */,
+				E3E4143016E816530027E66F /* movies.png */,
 				E3E4141016E6BBAF0027E66F /* MDFI-Week1Project1 */,
 				E3E4140916E6BBAF0027E66F /* Frameworks */,
 				E3E4140816E6BBAF0027E66F /* Products */,
@@ -90,7 +108,6 @@
 				E3E4142216E6BBAF0027E66F /* ViewController.h */,
 				E3E4142316E6BBAF0027E66F /* ViewController.m */,
 				E3E4142516E6BBAF0027E66F /* ViewController_iPhone.xib */,
-				E3E4142816E6BBAF0027E66F /* ViewController_iPad.xib */,
 				E3E4141116E6BBAF0027E66F /* Supporting Files */,
 			);
 			path = "MDFI-Week1Project1";
@@ -166,7 +183,8 @@
 				E3E4141F16E6BBAF0027E66F /* Default@2x.png in Resources */,
 				E3E4142116E6BBAF0027E66F /* Default-568h@2x.png in Resources */,
 				E3E4142716E6BBAF0027E66F /* ViewController_iPhone.xib in Resources */,
-				E3E4142A16E6BBAF0027E66F /* ViewController_iPad.xib in Resources */,
+				E3E4143916E81C7F0027E66F /* movies.png in Resources */,
+				E3E4143B16E81C8A0027E66F /* retina_movies.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,14 +218,6 @@
 				E3E4142616E6BBAF0027E66F /* en */,
 			);
 			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		E3E4142816E6BBAF0027E66F /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3E4142916E6BBAF0027E66F /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -312,6 +322,7 @@
 				E3E4142F16E6BBAF0027E66F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
