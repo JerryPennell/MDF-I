@@ -84,7 +84,9 @@
         }
     }
     static int  count = 0;
-    cell.textLabel.text = (NSString*)[stringArray objectAtIndex:indexPath.row];
+   
+    cell.textLabel.text =[NSString stringWithFormat:@"%@ %@", (NSString*)[stringArray objectAtIndex:indexPath.row], @" - DVD"];
+    
     count++;
     
     return cell;
