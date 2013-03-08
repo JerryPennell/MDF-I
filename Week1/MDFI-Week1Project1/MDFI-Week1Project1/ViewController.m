@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "CustomTableCell.h"
+#import "DetailViewController.h"
+#import "TableViewAppDelegate.h"
 
 @interface ViewController ()
 
@@ -16,9 +19,16 @@
 
 - (void)viewDidLoad
 {
+    //Initialize the array.
+	listOfItems = [[NSMutableArray alloc] init];
+    
     //Setting the 20 objects in the Table View
     
     stringArray = [[NSMutableArray alloc] initWithObjects:@"Die Hard", @"Toy Story", @"Matrix", @"Star Wars", @"Hunger Games", @"iRobot",@"Star Trek", @"Ironman", @"The Avengers", @"Lord of the Rings", @"Wall-e", @"Winnie the Pooh", @"Pulp Ficton", @"Seven", @"Blade", @"Shrek", @"Wizard of Oz", @"RoboCop", @"Indiana Jones", nil];
+    
+    	NSDictionary *moviesInDict = [NSDictionary dictionaryWithObject:stringArray forKey:@"Movies"];
+    
+    [listOfItems addObject:moviesInDict];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -35,19 +45,44 @@
     return sizeOfArray;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(CustomTableCell *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	//Get the selected Movie
+	
+	NSString *selectedMovie = nil;
+
+    NSDictionary *dictionary = [listOfItems objectAtIndex:indexPath.section];
+    NSArray *array = [dictionary objectForKey:@"Movies"];
+    selectedMovie = [array objectAtIndex:indexPath.row];
+	
+	//Initialize the detail view controller and display it.
+
+    DetailViewController *dvController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    dvController.selectedMovie = selectedMovie;
+    if (dvController !=nil)
+    {
+        [self presentViewController:dvController animated:TRUE completion:nil];
+    }
+}
+
+
+//Custom Cell creation
+
+- (CustomTableCell *)tableView:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    CustomTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (cell == nil)
+    NSArray *views  = [[NSBundle  mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
+    
+    for (UIView *view in views)
     {
-        //Initalize the cell
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        
+        if ([view isKindOfClass:[CustomTableCell class]])
+        {
+            cell = (CustomTableCell*)view;
+        }
     }
-    
     static int  count = 0;
     cell.textLabel.text = (NSString*)[stringArray objectAtIndex:indexPath.row];
     count++;
@@ -99,7 +134,6 @@
         [self setTitleOfButtonNamed:editButton withTitle:@"Done"];
 	}
 }
-
 
 
 @end

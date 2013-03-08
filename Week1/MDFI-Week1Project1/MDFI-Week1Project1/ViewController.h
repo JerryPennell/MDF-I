@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate>
 
 {
     //Outlet for table view of information
@@ -18,7 +18,13 @@
     NSMutableArray *stringArray;
     
     IBOutlet UIButton *editButton;
+
+    //Hold the list of items passed
+    NSMutableArray *listOfItems;
+    
     
 }
+
+
 
 @end

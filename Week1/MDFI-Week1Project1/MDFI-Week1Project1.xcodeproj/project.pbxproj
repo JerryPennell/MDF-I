@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E309E25E16E83A6400D42A5F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4142316E6BBAF0027E66F /* ViewController.m */; };
+		E309E26016E8488E00D42A5F /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E309E25F16E8488E00D42A5F /* CustomCellView.xib */; };
+		E309E26316E84A3E00D42A5F /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E309E26216E84A3E00D42A5F /* CustomTableCell.m */; };
+		E309E26916E9529800D42A5F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E309E26716E9529800D42A5F /* DetailViewController.m */; };
+		E309E26A16E9529800D42A5F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E309E26816E9529800D42A5F /* DetailViewController.xib */; };
+		E309E26D16E9616700D42A5F /* TableViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E309E26C16E9616700D42A5F /* TableViewAppDelegate.m */; };
+		E309E26F16E9656B00D42A5F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E309E26E16E9656B00D42A5F /* MainWindow.xib */; };
 		E3E4140B16E6BBAF0027E66F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E4140A16E6BBAF0027E66F /* UIKit.framework */; };
 		E3E4140D16E6BBAF0027E66F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E4140C16E6BBAF0027E66F /* Foundation.framework */; };
 		E3E4140F16E6BBAF0027E66F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E4140E16E6BBAF0027E66F /* CoreGraphics.framework */; };
@@ -23,6 +29,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E309E25F16E8488E00D42A5F /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
+		E309E26116E84A3E00D42A5F /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
+		E309E26216E84A3E00D42A5F /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+		E309E26616E9529800D42A5F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E309E26716E9529800D42A5F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E309E26816E9529800D42A5F /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		E309E26B16E9616700D42A5F /* TableViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAppDelegate.h; sourceTree = "<group>"; };
+		E309E26C16E9616700D42A5F /* TableViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewAppDelegate.m; sourceTree = "<group>"; };
+		E309E26E16E9656B00D42A5F /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		E3E4140716E6BBAF0027E66F /* MDFI-Week1Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDFI-Week1Project1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E4140A16E6BBAF0027E66F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E3E4140C16E6BBAF0027E66F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +123,15 @@
 				E3E4142216E6BBAF0027E66F /* ViewController.h */,
 				E3E4142316E6BBAF0027E66F /* ViewController.m */,
 				E3E4142516E6BBAF0027E66F /* ViewController_iPhone.xib */,
+				E309E25F16E8488E00D42A5F /* CustomCellView.xib */,
+				E309E26116E84A3E00D42A5F /* CustomTableCell.h */,
+				E309E26216E84A3E00D42A5F /* CustomTableCell.m */,
+				E309E26616E9529800D42A5F /* DetailViewController.h */,
+				E309E26716E9529800D42A5F /* DetailViewController.m */,
+				E309E26816E9529800D42A5F /* DetailViewController.xib */,
+				E309E26E16E9656B00D42A5F /* MainWindow.xib */,
+				E309E26B16E9616700D42A5F /* TableViewAppDelegate.h */,
+				E309E26C16E9616700D42A5F /* TableViewAppDelegate.m */,
 				E3E4141116E6BBAF0027E66F /* Supporting Files */,
 			);
 			path = "MDFI-Week1Project1";
@@ -185,6 +209,9 @@
 				E3E4142716E6BBAF0027E66F /* ViewController_iPhone.xib in Resources */,
 				E3E4143916E81C7F0027E66F /* movies.png in Resources */,
 				E3E4143B16E81C8A0027E66F /* retina_movies.png in Resources */,
+				E309E26016E8488E00D42A5F /* CustomCellView.xib in Resources */,
+				E309E26A16E9529800D42A5F /* DetailViewController.xib in Resources */,
+				E309E26F16E9656B00D42A5F /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +225,9 @@
 				E309E25E16E83A6400D42A5F /* ViewController.m in Sources */,
 				E3E4141716E6BBAF0027E66F /* main.m in Sources */,
 				E3E4141B16E6BBAF0027E66F /* AppDelegate.m in Sources */,
+				E309E26316E84A3E00D42A5F /* CustomTableCell.m in Sources */,
+				E309E26916E9529800D42A5F /* DetailViewController.m in Sources */,
+				E309E26D16E9616700D42A5F /* TableViewAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
