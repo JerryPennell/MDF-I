@@ -10,6 +10,8 @@
 
 @interface CustomCellView : UITableViewCell
 
+//Custome cell created for article selection lists
+
 @property (nonatomic, strong) IBOutlet UILabel *customCellTitle;
 @property (nonatomic, strong) IBOutlet UILabel *customCellDate;
 

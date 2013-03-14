@@ -310,9 +310,9 @@
 				E3E6174316F18C4600E3206D /* 1.png */,
 				E3E6174416F18C4600E3206D /* 2.png */,
 				E3E6174516F18C4600E3206D /* 57x57.png */,
+				E3E6174816F18C4600E3206D /* article.png */,
 				E3E6174616F18C4600E3206D /* AppDelegate.h */,
 				E3E6174716F18C4600E3206D /* AppDelegate.m */,
-				E3E6174816F18C4600E3206D /* article.png */,
 				E3E6174916F18C4600E3206D /* CustomCellView.h */,
 				E3E6174A16F18C4600E3206D /* CustomCellView.m */,
 				E3E6174B16F18C4600E3206D /* CustomCellView.xib */,
@@ -324,7 +324,6 @@
 				E3E6175116F18C4600E3206D /* DetailView.m */,
 				E3E6175216F18C4600E3206D /* DetailView.xib */,
 				E3E6175316F18C4600E3206D /* InfoPlist.strings */,
-				E3E6175516F18C4600E3206D /* ViewController.xib */,
 				E3E6175716F18C4600E3206D /* main.m */,
 				E3E6175816F18C4600E3206D /* MDFI-Week2Project2-Info.plist */,
 				E3E6175916F18C4600E3206D /* MDFI-Week2Project2-Prefix.pch */,
@@ -337,6 +336,7 @@
 				E3E6176016F18C4600E3206D /* TableViewController.xib */,
 				E3E6176116F18C4600E3206D /* ViewController.h */,
 				E3E6176216F18C4600E3206D /* ViewController.m */,
+				E3E6175516F18C4600E3206D /* ViewController.xib */,
 			);
 			path = "MDFI-Week2Project2";
 			sourceTree = "<group>";
@@ -610,6 +610,7 @@
 				E3E6168D16EEA19200E3206D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

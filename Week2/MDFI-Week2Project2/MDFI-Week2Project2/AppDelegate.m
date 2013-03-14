@@ -41,7 +41,8 @@
     UIViewController *tableView = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:nil];
     UINavigationController *navTableController = [[UINavigationController alloc] initWithRootViewController:tableView];
    
-
+    
+    //Sets up the tabbed navigation at the bottom
     
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1,navController, navTableController];

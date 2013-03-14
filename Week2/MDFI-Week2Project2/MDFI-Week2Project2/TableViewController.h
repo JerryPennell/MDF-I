@@ -10,6 +10,8 @@
 
 @interface TableViewController : UITableViewController
 {
+    
+    //Information of the Article
     NSArray *articleTitlesUI;
     NSArray *articleInfoUI;
     NSArray *articleLinkUI;
