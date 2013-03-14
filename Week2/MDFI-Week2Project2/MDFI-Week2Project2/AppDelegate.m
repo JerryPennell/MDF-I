@@ -10,7 +10,6 @@
 
 #import "ViewController.h"
 #import "FirstViewController.h"
-#import "SecondViewController.h"
 #import "ThirdViewController.h"
 #import "TableViewController.h"
 
@@ -21,24 +20,31 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
+    
+    //Stacked controller
+    
     //Child View
     ViewController *viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     
     //Parent View
     UINavigationController *navController  = [[UINavigationController alloc]  initWithRootViewController:viewController];
    
-    // Override point for customization after application launch.
     
+    //opening page
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     
-   // UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    
+    //Info button will add back in later
+   // UIViewController *thirdViewController = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
+    
+    
     UIViewController *tableView = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:nil];
+    UINavigationController *navTableController = [[UINavigationController alloc] initWithRootViewController:tableView];
+   
+
     
-    UINavigationController *navController2 = [[UINavigationController alloc] initWithRootViewController:tableView];
-    
-    UIViewController *viewController3 = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1,navController, navController2,viewController3];
+    self.tabBarController.viewControllers = @[viewController1,navController, navTableController];
     self.window.rootViewController = self.tabBarController;
     
     [self.window makeKeyAndVisible];

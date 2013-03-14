@@ -21,6 +21,17 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = NSLocalizedString(@"UInav Stacked", @"UInav Stacked");
+        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        
+    }
+    return self;
+}
+
 - (void)didReceiveMemoryWarning
 {
     //Detail background
@@ -32,7 +43,7 @@
 -(IBAction)onClick:(id)sender
 {
     //Creates the second view controller
-    SecondStackViewController *secondView = [[SecondStackViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+    SecondStackViewController *secondView = [[SecondStackViewController alloc] initWithNibName:@"SecondStackView" bundle:nil];
     if (secondView != nil)
     {
         //Moves to the second view controller
@@ -43,8 +54,6 @@
 
 - (void) viewWillAppear:(BOOL)animated
 {
-    self.title = @"Hello";
-    self.navigationController.navigationBar.tintColor = [UIColor blueColor];
     [super viewWillAppear:animated];
 }
 
