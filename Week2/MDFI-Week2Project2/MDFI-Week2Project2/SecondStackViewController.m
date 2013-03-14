@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Wayne Pennell. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "SecondStackViewController.h"
 
-@interface SecondViewController ()
+@interface SecondStackViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation SecondStackViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

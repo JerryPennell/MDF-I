@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SecondViewController.h"
+#import "SecondStackViewController.h"
 
 @interface ViewController ()
 
@@ -23,6 +23,8 @@
 
 - (void)didReceiveMemoryWarning
 {
+    //Detail background
+    self.view.backgroundColor=[[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"detailbg.png"]];
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -30,7 +32,7 @@
 -(IBAction)onClick:(id)sender
 {
     //Creates the second view controller
-    SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+    SecondStackViewController *secondView = [[SecondStackViewController alloc] initWithNibName:@"SecondView" bundle:nil];
     if (secondView != nil)
     {
         //Moves to the second view controller

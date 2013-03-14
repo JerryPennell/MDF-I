@@ -18,8 +18,25 @@
 		E3E6168216EEA19200E3206D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E6168116EEA19200E3206D /* Default-568h@2x.png */; };
 		E3E6168516EEA19200E3206D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E6168416EEA19200E3206D /* ViewController.m */; };
 		E3E6168816EEA19200E3206D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E6168616EEA19200E3206D /* ViewController.xib */; };
-		E3E6168F16EEA58100E3206D /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E6168E16EEA58100E3206D /* SecondView.xib */; };
-		E3E6169216EEA66200E3206D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E6169116EEA66200E3206D /* SecondViewController.m */; };
+		E3E6168F16EEA58100E3206D /* SecondStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E6168E16EEA58100E3206D /* SecondStackView.xib */; };
+		E3E6169216EEA66200E3206D /* SecondStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E6169116EEA66200E3206D /* SecondStackViewController.m */; };
+		E3E616E416F145DB00E3206D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E616D616F145DA00E3206D /* FirstViewController.m */; };
+		E3E616E516F145DB00E3206D /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E616D716F145DA00E3206D /* first.png */; };
+		E3E616E616F145DB00E3206D /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E616D816F145DB00E3206D /* first@2x.png */; };
+		E3E616E716F145DB00E3206D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E616DA16F145DB00E3206D /* SecondViewController.m */; };
+		E3E616E816F145DB00E3206D /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E616DB16F145DB00E3206D /* second.png */; };
+		E3E616E916F145DB00E3206D /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E616DC16F145DB00E3206D /* second@2x.png */; };
+		E3E616EA16F145DB00E3206D /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E616DE16F145DB00E3206D /* ThirdViewController.m */; };
+		E3E616EB16F145DB00E3206D /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E616DF16F145DB00E3206D /* FirstViewController.xib */; };
+		E3E616EC16F145DB00E3206D /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E616E116F145DB00E3206D /* SecondViewController.xib */; };
+		E3E616ED16F145DB00E3206D /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E616E316F145DB00E3206D /* ThirdViewController.xib */; };
+		E3E616F116F146C700E3206D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E616EF16F146C700E3206D /* TableViewController.m */; };
+		E3E616F216F146C700E3206D /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E616F016F146C700E3206D /* TableViewController.xib */; };
+		E3E616F516F14A9300E3206D /* CustomCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E616F416F14A9300E3206D /* CustomCellView.m */; };
+		E3E616F716F14AB500E3206D /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E616F616F14AB500E3206D /* CustomCellView.xib */; };
+		E3E616FB16F14E0E00E3206D /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E616F916F14E0E00E3206D /* DetailView.m */; };
+		E3E616FC16F14E0E00E3206D /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E616FA16F14E0E00E3206D /* DetailView.xib */; };
+		E3E616FE16F1617600E3206D /* detailbg.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E616FD16F1617600E3206D /* detailbg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +56,32 @@
 		E3E6168316EEA19200E3206D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E3E6168416EEA19200E3206D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E3E6168716EEA19200E3206D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		E3E6168E16EEA58100E3206D /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
-		E3E6169016EEA66200E3206D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		E3E6169116EEA66200E3206D /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E3E6168E16EEA58100E3206D /* SecondStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondStackView.xib; sourceTree = "<group>"; };
+		E3E6169016EEA66200E3206D /* SecondStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondStackViewController.h; sourceTree = "<group>"; };
+		E3E6169116EEA66200E3206D /* SecondStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondStackViewController.m; sourceTree = "<group>"; };
+		E3E616D516F145DA00E3206D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ../../tabTest/tabTest/FirstViewController.h; sourceTree = "<group>"; };
+		E3E616D616F145DA00E3206D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ../../tabTest/tabTest/FirstViewController.m; sourceTree = "<group>"; };
+		E3E616D716F145DA00E3206D /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = ../../tabTest/tabTest/first.png; sourceTree = "<group>"; };
+		E3E616D816F145DB00E3206D /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "../../tabTest/tabTest/first@2x.png"; sourceTree = "<group>"; };
+		E3E616D916F145DB00E3206D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ../../tabTest/tabTest/SecondViewController.h; sourceTree = "<group>"; };
+		E3E616DA16F145DB00E3206D /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../../tabTest/tabTest/SecondViewController.m; sourceTree = "<group>"; };
+		E3E616DB16F145DB00E3206D /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = ../../tabTest/tabTest/second.png; sourceTree = "<group>"; };
+		E3E616DC16F145DB00E3206D /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "../../tabTest/tabTest/second@2x.png"; sourceTree = "<group>"; };
+		E3E616DD16F145DB00E3206D /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdViewController.h; path = ../../tabTest/tabTest/ThirdViewController.h; sourceTree = "<group>"; };
+		E3E616DE16F145DB00E3206D /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdViewController.m; path = ../../tabTest/tabTest/ThirdViewController.m; sourceTree = "<group>"; };
+		E3E616E016F145DB00E3206D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ../../tabTest/tabTest/en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		E3E616E216F145DB00E3206D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ../../tabTest/tabTest/en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		E3E616E316F145DB00E3206D /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ThirdViewController.xib; path = ../../tabTest/tabTest/ThirdViewController.xib; sourceTree = "<group>"; };
+		E3E616EE16F146C700E3206D /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		E3E616EF16F146C700E3206D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		E3E616F016F146C700E3206D /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		E3E616F316F14A9300E3206D /* CustomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellView.h; sourceTree = "<group>"; };
+		E3E616F416F14A9300E3206D /* CustomCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellView.m; sourceTree = "<group>"; };
+		E3E616F616F14AB500E3206D /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
+		E3E616F816F14E0D00E3206D /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		E3E616F916F14E0E00E3206D /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		E3E616FA16F14E0E00E3206D /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		E3E616FD16F1617600E3206D /* detailbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detailbg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,14 +128,37 @@
 		E3E6167116EEA19200E3206D /* MDFI-Week2Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				E3E616FD16F1617600E3206D /* detailbg.png */,
 				E3E6167A16EEA19200E3206D /* AppDelegate.h */,
 				E3E6167B16EEA19200E3206D /* AppDelegate.m */,
 				E3E6168316EEA19200E3206D /* ViewController.h */,
 				E3E6168416EEA19200E3206D /* ViewController.m */,
 				E3E6168616EEA19200E3206D /* ViewController.xib */,
-				E3E6169016EEA66200E3206D /* SecondViewController.h */,
-				E3E6169116EEA66200E3206D /* SecondViewController.m */,
-				E3E6168E16EEA58100E3206D /* SecondView.xib */,
+				E3E616D516F145DA00E3206D /* FirstViewController.h */,
+				E3E616D616F145DA00E3206D /* FirstViewController.m */,
+				E3E616D716F145DA00E3206D /* first.png */,
+				E3E616D816F145DB00E3206D /* first@2x.png */,
+				E3E616D916F145DB00E3206D /* SecondViewController.h */,
+				E3E616DA16F145DB00E3206D /* SecondViewController.m */,
+				E3E616DB16F145DB00E3206D /* second.png */,
+				E3E616DC16F145DB00E3206D /* second@2x.png */,
+				E3E616DD16F145DB00E3206D /* ThirdViewController.h */,
+				E3E616DE16F145DB00E3206D /* ThirdViewController.m */,
+				E3E616DF16F145DB00E3206D /* FirstViewController.xib */,
+				E3E616E116F145DB00E3206D /* SecondViewController.xib */,
+				E3E616E316F145DB00E3206D /* ThirdViewController.xib */,
+				E3E6169016EEA66200E3206D /* SecondStackViewController.h */,
+				E3E6169116EEA66200E3206D /* SecondStackViewController.m */,
+				E3E6168E16EEA58100E3206D /* SecondStackView.xib */,
+				E3E616EE16F146C700E3206D /* TableViewController.h */,
+				E3E616EF16F146C700E3206D /* TableViewController.m */,
+				E3E616F016F146C700E3206D /* TableViewController.xib */,
+				E3E616F816F14E0D00E3206D /* DetailView.h */,
+				E3E616F916F14E0E00E3206D /* DetailView.m */,
+				E3E616FA16F14E0E00E3206D /* DetailView.xib */,
+				E3E616F316F14A9300E3206D /* CustomCellView.h */,
+				E3E616F416F14A9300E3206D /* CustomCellView.m */,
+				E3E616F616F14AB500E3206D /* CustomCellView.xib */,
 				E3E6167216EEA19200E3206D /* Supporting Files */,
 			);
 			path = "MDFI-Week2Project2";
@@ -171,7 +234,18 @@
 				E3E6168016EEA19200E3206D /* Default@2x.png in Resources */,
 				E3E6168216EEA19200E3206D /* Default-568h@2x.png in Resources */,
 				E3E6168816EEA19200E3206D /* ViewController.xib in Resources */,
-				E3E6168F16EEA58100E3206D /* SecondView.xib in Resources */,
+				E3E6168F16EEA58100E3206D /* SecondStackView.xib in Resources */,
+				E3E616E516F145DB00E3206D /* first.png in Resources */,
+				E3E616E616F145DB00E3206D /* first@2x.png in Resources */,
+				E3E616E816F145DB00E3206D /* second.png in Resources */,
+				E3E616E916F145DB00E3206D /* second@2x.png in Resources */,
+				E3E616EB16F145DB00E3206D /* FirstViewController.xib in Resources */,
+				E3E616EC16F145DB00E3206D /* SecondViewController.xib in Resources */,
+				E3E616ED16F145DB00E3206D /* ThirdViewController.xib in Resources */,
+				E3E616F216F146C700E3206D /* TableViewController.xib in Resources */,
+				E3E616F716F14AB500E3206D /* CustomCellView.xib in Resources */,
+				E3E616FC16F14E0E00E3206D /* DetailView.xib in Resources */,
+				E3E616FE16F1617600E3206D /* detailbg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +259,13 @@
 				E3E6167816EEA19200E3206D /* main.m in Sources */,
 				E3E6167C16EEA19200E3206D /* AppDelegate.m in Sources */,
 				E3E6168516EEA19200E3206D /* ViewController.m in Sources */,
-				E3E6169216EEA66200E3206D /* SecondViewController.m in Sources */,
+				E3E6169216EEA66200E3206D /* SecondStackViewController.m in Sources */,
+				E3E616E416F145DB00E3206D /* FirstViewController.m in Sources */,
+				E3E616E716F145DB00E3206D /* SecondViewController.m in Sources */,
+				E3E616EA16F145DB00E3206D /* ThirdViewController.m in Sources */,
+				E3E616F116F146C700E3206D /* TableViewController.m in Sources */,
+				E3E616F516F14A9300E3206D /* CustomCellView.m in Sources */,
+				E3E616FB16F14E0E00E3206D /* DetailView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +286,22 @@
 				E3E6168716EEA19200E3206D /* en */,
 			);
 			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		E3E616DF16F145DB00E3206D /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3E616E016F145DB00E3206D /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		E3E616E116F145DB00E3206D /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3E616E216F145DB00E3206D /* en */,
+			);
+			name = SecondViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

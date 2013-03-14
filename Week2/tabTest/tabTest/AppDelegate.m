@@ -1,18 +1,16 @@
 //
 //  AppDelegate.m
-//  MDFI-Week2Project2
+//  tabTest
 //
-//  Created by Wayne Pennell on 3/11/13.
+//  Created by Wayne Pennell on 3/12/13.
 //  Copyright (c) 2013 Wayne Pennell. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
-#import "TableViewController.h"
 
 @implementation AppDelegate
 
@@ -20,27 +18,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    
-    //Child View
-    ViewController *viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    
-    //Parent View
-    UINavigationController *navController  = [[UINavigationController alloc]  initWithRootViewController:viewController];
-   
-    // Override point for customization after application launch.
-    
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
-    
-   // UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-    UIViewController *tableView = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:nil];
-    
-    UINavigationController *navController2 = [[UINavigationController alloc] initWithRootViewController:tableView];
-    
+    UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     UIViewController *viewController3 = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
-    self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1,navController, navController2,viewController3];
-    self.window.rootViewController = self.tabBarController;
     
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = @[navController, viewController2,viewController3];
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -71,5 +56,19 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+}
+*/
+
+/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+{
+}
+*/
 
 @end
