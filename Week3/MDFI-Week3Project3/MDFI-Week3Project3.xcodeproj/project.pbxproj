@@ -26,6 +26,8 @@
 		E356678D16F9298000138259 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E356678B16F9298000138259 /* SecondViewController.xib */; };
 		E356679416F929CE00138259 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E356679316F929CE00138259 /* MapKit.framework */; };
 		E356679716F9344400138259 /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E356679616F9344400138259 /* LocationAnnotation.m */; };
+		E356679B16F9410600138259 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E356679916F9410600138259 /* DetailViewController.m */; };
+		E356679C16F9410600138259 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E356679A16F9410600138259 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,9 @@
 		E356679316F929CE00138259 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E356679516F9344400138259 /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
 		E356679616F9344400138259 /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
+		E356679816F9410600138259 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E356679916F9410600138259 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E356679A16F9410600138259 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,9 @@
 				E356677B16F9298000138259 /* FirstViewController.m */,
 				E356677D16F9298000138259 /* first.png */,
 				E356677F16F9298000138259 /* first@2x.png */,
+				E356679816F9410600138259 /* DetailViewController.h */,
+				E356679916F9410600138259 /* DetailViewController.m */,
+				E356679A16F9410600138259 /* DetailViewController.xib */,
 				E356678116F9298000138259 /* SecondViewController.h */,
 				E356678216F9298000138259 /* SecondViewController.m */,
 				E356678416F9298000138259 /* second.png */,
@@ -197,6 +205,7 @@
 				E356678716F9298000138259 /* second@2x.png in Resources */,
 				E356678A16F9298000138259 /* FirstViewController.xib in Resources */,
 				E356678D16F9298000138259 /* SecondViewController.xib in Resources */,
+				E356679C16F9410600138259 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +221,7 @@
 				E356677C16F9298000138259 /* FirstViewController.m in Sources */,
 				E356678316F9298000138259 /* SecondViewController.m in Sources */,
 				E356679716F9344400138259 /* LocationAnnotation.m in Sources */,
+				E356679B16F9410600138259 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,4 +36,32 @@
     // Dispose of any resources that can be recreated.
 }
 
+//Forcing all states so the text will stay for done and editing
+-(void)setTitleOfButtonNamed:(UIButton *)button withTitle:(NSString *)buttonTitle
+{
+    [button setTitle:buttonTitle forState:(UIControlStateHighlighted)];
+    [button setTitle:buttonTitle forState:(UIControlStateSelected)];
+    [button setTitle:buttonTitle forState:(UIControlStateNormal)];
+    
+}
+
+//Sends the button into edit mode or done when clicked
+- (IBAction) Edit:(id)sender{
+	if(self.editing)
+	{
+		[super setEditing:NO animated:NO];
+		[tableView setEditing:NO animated:NO];
+		[tableView reloadData];
+        [self setTitleOfButtonNamed:editButton withTitle:@"Edit"];
+		
+	}
+	else
+	{
+		[super setEditing:YES animated:YES];
+		[tableView setEditing:YES animated:YES];
+		[tableView reloadData];
+        [self setTitleOfButtonNamed:editButton withTitle:@"Done"];
+	}
+}
+
 @end
