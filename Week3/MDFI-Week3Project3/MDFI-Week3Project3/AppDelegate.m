@@ -7,10 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
 #import "FirstViewController.h"
-
 #import "SecondViewController.h"
+#import "LocationAnnotation.h"
 
 @implementation AppDelegate
 
@@ -25,6 +24,49 @@
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void) createFictionalLocations{
+    CLLocationCoordinate2D charlestonSC;
+    charlestonSC.latitude = 32.776566f;
+    charlestonSC.longitude = -79.930922f;
+    
+    CLLocationCoordinate2D columbiaSC;
+    columbiaSC.latitude = 34.000710f;
+    columbiaSC.longitude = -81.034814f;
+    
+    CLLocationCoordinate2D greenvilleSC;
+    greenvilleSC.latitude = 34.852618f;
+    greenvilleSC.longitude = -82.394010f;
+    
+    CLLocationCoordinate2D rockhillSC;
+    rockhillSC.latitude = 34.924867f;
+    rockhillSC.longitude = -81.025078f;
+    
+    CLLocationCoordinate2D andersonSC;
+    andersonSC.latitude = 34.503439f;
+    andersonSC.longitude = -82.650133f;
+    
+    CLLocationCoordinate2D spartanburgSC;
+    spartanburgSC.latitude = 34.949567f;
+    spartanburgSC.longitude = -81.932048f;
+    
+    CLLocationCoordinate2D cloverSC;
+    cloverSC.latitude = 35.111248f;
+    cloverSC.longitude = -81.226465f;
+    
+    CLLocationCoordinate2D fortmillSC;
+    fortmillSC.latitude = 34.704861f;
+    fortmillSC.longitude = -81.214256f;
+    
+    CLLocationCoordinate2D chesterSC;
+    chesterSC.latitude = 35.007370;
+    chesterSC.longitude = -76.311035f;
+    
+    CLLocationCoordinate2D winnsboroSC;
+    winnsboroSC.latitude = 34.380701f;
+    winnsboroSC.longitude = -81.086478f;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

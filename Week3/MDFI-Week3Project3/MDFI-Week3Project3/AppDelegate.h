@@ -14,4 +14,7 @@
 
 @property (strong, nonatomic) UITabBarController *tabBarController;
 
+//Adding a location array to hold the 10 places
+@property (strong, nonatomic) NSMutableArray *locDataArray;
+
 @end
