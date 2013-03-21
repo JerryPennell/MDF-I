@@ -7,18 +7,18 @@
 //
 
 #import "DetailViewController.h"
-#import <MapKit/MapKit.h>
-#import "LocationAnnotation.h"
+
+@interface DetailViewController ()
+
+@end
 
 @implementation DetailViewController
-
-@synthesize selectedLocation;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        //Customize here
     }
     return self;
 }
@@ -32,26 +32,22 @@
     
     //sets region based off of location
     MKCoordinateRegion region;
-    region.center = self.locationAnt.coordinate;
+    region.center = self.location.coordinate;
     region.span = span;
     mapView.region = region;
     
     //adds annotation
-    [mapView addAnnotation:self.locationAnt];
+    [mapView addAnnotation:self.location];
     
     //adds information to the view from the array
-    self.title = self.locationAnt.title;
-    self.businessTitle.text = self.locationAnt.title;
-    self.businessLongInfo.text = [NSString stringWithFormat:@"%f", self.locationAnt.coordinate.latitude];
-    self.businessLongInfo.text = [NSString stringWithFormat:@"%f", self.locationAnt.coordinate.longitude];
+    self.title = self.location.title;
+    self.locationTitle.text = self.location.title;
+    self.locationLat.text = [NSString stringWithFormat:@"%f", self.location.coordinate.latitude];
+    self.locationLon.text = [NSString stringWithFormat:@"%f", self.location.coordinate.longitude];
     
+    [super viewDidLoad];
     
-    //Display the selected location.
-	lblText.text = selectedLocation;
-	
-	//Set the title of the navigation bar
-	self.navigationItem.title = @"Business Location";
-
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg1.png"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,3 +63,4 @@
 }
 
 @end
+

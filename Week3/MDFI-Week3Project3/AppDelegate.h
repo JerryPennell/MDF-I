@@ -6,13 +6,22 @@
 //  Copyright (c) 2013 Wayne Pennell. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+{
+    //Locations
+    CLLocationCoordinate2D charlestonSC, columbiaSC, greenvilleSC, rockhillSC, andersonSC, spartanburgSC, cloverSC, fortmillSC, chesterSC, winnsboroSC;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) UITabBarController *tabBarController;
+
+//Locations holding
+@property (strong, nonatomic) NSMutableArray *locDataArray;
+
+
 
 
 @end

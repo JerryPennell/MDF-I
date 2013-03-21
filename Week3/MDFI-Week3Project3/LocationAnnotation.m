@@ -6,17 +6,18 @@
 //  Copyright (c) 2013 Wayne Pennell. All rights reserved.
 //
 
+
 #import "LocationAnnotation.h"
 
 @implementation LocationAnnotation
-@synthesize titleOfBusiness,coordinates;
+@synthesize title, coordinate;
 
--(id)initWithTitle:(NSString *)text coord:(CLLocationCoordinate2D)coord
+-(id)initWithTitle:(NSString*)text coord:(CLLocationCoordinate2D)coord
 {
-    if(( self = [super init]))
+    if ((self = [super init]))
     {
-        titleOfBusiness = text;
-        coordinates = coord;
+        title = text;
+        coordinate = coord;
     }
     return self;
 }

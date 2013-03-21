@@ -8,33 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-#import "LocationAnnotation.h"
 
-
+@class AppDelegate;
 
 @interface FirstViewController : UIViewController
 {
-    IBOutlet UIButton *editButton;
     IBOutlet UITableView *tableView;
-    
-    //Details of the array for the table view (First Controller)
-    
-    NSArray *businessNamesUI;
-    NSArray *businessLatLocationsUI;
-    NSArray *businessLongLocationsUI;
-    
-    //Locations
-    CLLocationCoordinate2D charlestonSC, columbiaSC, greenvilleSC, rockhillSC, andersonSC, spartanburgSC, cloverSC, fortmillSC, chesterSC, winnsboroSC;
-       
+    IBOutlet UIButton *editButton;
+    AppDelegate *delegateApp;
 }
 
 
-//Information that would be displayed on the information detail page
-@property (nonatomic, strong) IBOutlet UILabel *businessTitle;
-@property (nonatomic, strong) IBOutlet UILabel *businessLatInfo;
-@property (nonatomic, strong) IBOutlet UILabel *businessLongInfo;
-@property (nonatomic, strong) IBOutlet LocationAnnotation *locationAnt;
-@property (strong, nonatomic) NSMutableArray *locDataArray;
-
+-(IBAction)Edit:(id)sender;
 
 @end
