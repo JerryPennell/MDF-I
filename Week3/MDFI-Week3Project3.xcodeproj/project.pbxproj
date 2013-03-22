@@ -29,6 +29,8 @@
 		E356679C16F9410600138259 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E356679A16F9410600138259 /* DetailViewController.xib */; };
 		E356679F16F9570400138259 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E356679E16F9570400138259 /* CustomTableCell.m */; };
 		E35667A116F9572C00138259 /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E35667A016F9572C00138259 /* CustomCellView.xib */; };
+		E3A15FD816FBEF340048AFAF /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A15FD616FBEF340048AFAF /* 114x114.png */; };
+		E3A15FD916FBEF340048AFAF /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A15FD716FBEF340048AFAF /* 57x57.png */; };
 		E3BB7B3216FA91230030F2B0 /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E356679616F9344400138259 /* LocationAnnotation.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,10 @@
 		E356679D16F9570400138259 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
 		E356679E16F9570400138259 /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
 		E35667A016F9572C00138259 /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
+		E3A15FD616FBEF340048AFAF /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
+		E3A15FD716FBEF340048AFAF /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		E3A15FDA16FBEF500048AFAF /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		E3A15FDC16FBEF550048AFAF /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
 		E3BB7B3316FA99D30030F2B0 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +91,8 @@
 		E356675616F9298000138259 = {
 			isa = PBXGroup;
 			children = (
+				E3A15FDC16FBEF550048AFAF /* 114x114.png */,
+				E3A15FDA16FBEF500048AFAF /* 57x57.png */,
 				E356679316F929CE00138259 /* MapKit.framework */,
 				E356676816F9298000138259 /* MDFI-Week3Project3 */,
 				E356676116F9298000138259 /* Frameworks */,
@@ -141,6 +149,8 @@
 		E356676916F9298000138259 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3A15FD616FBEF340048AFAF /* 114x114.png */,
+				E3A15FD716FBEF340048AFAF /* 57x57.png */,
 				E356676A16F9298000138259 /* MDFI-Week3Project3-Info.plist */,
 				E356676B16F9298000138259 /* InfoPlist.strings */,
 				E356676E16F9298000138259 /* main.m */,
@@ -215,6 +225,8 @@
 				E356678D16F9298000138259 /* SecondViewController.xib in Resources */,
 				E356679C16F9410600138259 /* DetailViewController.xib in Resources */,
 				E35667A116F9572C00138259 /* CustomCellView.xib in Resources */,
+				E3A15FD816FBEF340048AFAF /* 114x114.png in Resources */,
+				E3A15FD916FBEF340048AFAF /* 57x57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
