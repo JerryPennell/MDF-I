@@ -25,9 +25,11 @@
     UINavigationController *navController1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
     
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    UINavigationController *navController2 = [[UINavigationController alloc] initWithRootViewController:viewController2];
+    
     self.tabBarController = [[UITabBarController alloc] init];
     
-    self.tabBarController.viewControllers = @[navController1, viewController2];
+    self.tabBarController.viewControllers = @[navController1, navController2];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

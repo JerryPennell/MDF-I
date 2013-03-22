@@ -28,6 +28,19 @@
     return self;
 }
 
+- (void)loadView
+{
+    UIBarButtonItem *btn = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStyleBordered target:self action:@selector(backPressed:)];
+    self.navigationItem.leftBarButtonItem = btn;
+    
+    [super loadView];
+}
+
+-(void)backPressed: (id)sender
+{
+    [self.navigationController popViewControllerAnimated: YES]; // or popToRoot... if required.
+}
+
 - (void)viewDidLoad
 {
     //Sets zoom level for the map view
@@ -66,6 +79,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void) viewWillDisappear:(BOOL)animated {
+    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+        // back button was pressed.  We know this is true because self is no longer
+        // in the navigation stack.
+    }
+    [super viewWillDisappear:animated];
+}
+
+//Back button in case you don't want to add an event
+-(IBAction)backButton:(id)sender
+{
+    [self dismissViewControllerAnimated:TRUE completion:nil];
+}
+
 
 @end
 

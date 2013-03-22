@@ -15,4 +15,6 @@
     IBOutlet MKMapView *mapView;
 }
 
+-(IBAction)backButton:(id)sender;            //Back button
+
 @end
