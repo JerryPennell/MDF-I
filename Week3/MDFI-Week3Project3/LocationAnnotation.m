@@ -12,6 +12,8 @@
 @implementation LocationAnnotation
 @synthesize title, coordinate;
 
+
+//Holds the title and coordinates
 -(id)initWithTitle:(NSString*)text coord:(CLLocationCoordinate2D)coord
 {
     if ((self = [super init]))

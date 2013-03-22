@@ -11,7 +11,7 @@
 
 @class AppDelegate;
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController 
 {
     IBOutlet UITableView *tableView;
     IBOutlet UIButton *editButton;

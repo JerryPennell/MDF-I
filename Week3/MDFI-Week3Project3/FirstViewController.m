@@ -23,7 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Biz View", @"Biz View");
+        self.title = NSLocalizedString(@"Biz List", @"Biz List");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
         delegateApp = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     }

@@ -12,4 +12,5 @@
 {
     //Custom cell created for business lists
     IBOutlet UILabel *textLabel;
+    
 }
