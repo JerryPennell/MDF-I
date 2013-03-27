@@ -7,12 +7,18 @@
 //
 
 #import "JPAddMovieViewController.h"
+#import "JPMovieListViewController.h"
+#import "JPMovie.h"
 
 @interface JPAddMovieViewController ()
 
 @end
 
 @implementation JPAddMovieViewController
+
+//Name of our movie
+@synthesize movieNameField = _movieNameField;
+@synthesize movieListViewController = _movieListViewController;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -62,4 +68,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - IBActions
+
+-(void)cancelButtonPressed:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+}
+
+-(void)doneButtonPressed:(id)sender{
+    //Creating a new movie
+    JPMovie *newMovie = [[JPMovie alloc] initWithName:self.movieNameField.text needMovie:NO];
+    
+    //Adds in my new movie to my collection
+    [self.movieListViewController.movies addObject:newMovie];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    //After making a change we need to refresh the list
+    [self.movieListViewController.tableView reloadData];
+    
+}
 @end

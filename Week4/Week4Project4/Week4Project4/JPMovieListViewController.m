@@ -8,6 +8,7 @@
 
 #import "JPMovieListViewController.h"
 #import "JPMovie.h"
+#import "JPAddMovieViewController.h"
 
 @interface JPMovieListViewController ()
 
@@ -71,6 +72,20 @@
     //Returns my movies by count
     
     return self.movies.count;
+}
+
+//Using Segue to go through the add view controller - reference to itself
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"AddMovieSegue"]){
+        
+        //Casting the controller
+        UINavigationController *navCon = segue.destinationViewController;
+        
+        //Get the root controller
+        JPAddMovieViewController *addMovieController = [navCon.viewControllers objectAtIndex:0];
+        addMovieController.movieListViewController = self;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

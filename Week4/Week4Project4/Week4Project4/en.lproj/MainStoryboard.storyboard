@@ -62,7 +62,7 @@
                         <barButtonItem key="backBarButtonItem" title="List" id="ac6-C5-PdD"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="g8Y-qO-Sgc">
                             <connections>
-                                <segue destination="vOa-vK-I44" kind="modal" id="NbB-Ia-aAH"/>
+                                <segue destination="vOa-vK-I44" kind="modal" identifier="AddMovieSegue" id="NbB-Ia-aAH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -146,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="858" y="61"/>
         </scene>
-        <!--Movie List View Controller - Add Movie-->
+        <!--Add Movie View Controller - Add Movie-->
         <scene sceneID="Py0-Di-TuO">
             <objects>
-                <tableViewController id="v6R-L3-swI" customClass="JPMovieListViewController" sceneMemberID="viewController">
+                <tableViewController id="v6R-L3-swI" customClass="JPAddMovieViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="9T9-lX-hfX">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,9 +189,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Movie" id="XMR-MI-To0">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="p6B-J5-UJU"/>
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="9Zs-N9-ScJ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="p6B-J5-UJU">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="v6R-L3-swI" id="GT7-0g-TFW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="9Zs-N9-ScJ">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="v6R-L3-swI" id="yAX-ar-QTF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="movieNameField" destination="4JC-Xz-tLd" id="QbU-j3-dNP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mo-DC-ac6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,6 +264,22 @@
             <point key="canvasLocation" x="858" y="-657"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="JPAddMovieViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JPAddMovieViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelButtonPressed:"/>
+                <relationship kind="action" name="doneButtonPressed:"/>
+                <relationship kind="outlet" name="movieNameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="JPMovieListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JPMovieListViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

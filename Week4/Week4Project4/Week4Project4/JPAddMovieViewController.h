@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class JPMovieListViewController;
+
 @interface JPAddMovieViewController : UITableViewController
+
+- (IBAction)cancelButtonPressed:(id)sender;
+
+- (IBAction)doneButtonPressed:(id)sender;
+
+@property (nonatomic, strong) IBOutlet UITextField *movieNameField;
+
+//Creating class should be a delegate
+@property (nonatomic, strong) JPMovieListViewController *movieListViewController;
 
 @end
