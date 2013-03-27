@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) NSMutableArray *movies;
 
+-(IBAction)editButtonPressed:(id)sender;
+
 @end

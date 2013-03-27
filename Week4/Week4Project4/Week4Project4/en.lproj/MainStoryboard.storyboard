@@ -29,7 +29,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="lJs-zm-dOg" kind="push" id="mFe-1L-enZ"/>
+                                    <segue destination="lJs-zm-dOg" kind="push" identifier="EditDontHaveMovieSegue" id="mFe-1L-enZ"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DoHaveCell" textLabel="J2d-h9-XlD" style="IBUITableViewCellStyleDefault" id="Yy3-pg-B7X">
@@ -48,7 +48,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="lJs-zm-dOg" kind="push" id="PHp-VQ-wIf"/>
+                                    <segue destination="lJs-zm-dOg" kind="push" identifier="EditHaveMovieSegue" id="PHp-VQ-wIf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -60,6 +60,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="My Movies" id="UFV-k6-Yry">
                         <barButtonItem key="backBarButtonItem" title="List" id="ac6-C5-PdD"/>
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="I6J-es-URK">
+                            <connections>
+                                <action selector="editButtonPressed:" destination="cwu-Ls-Pd3" id="JNF-kn-S5p"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="g8Y-qO-Sgc">
                             <connections>
                                 <segue destination="vOa-vK-I44" kind="modal" identifier="AddMovieSegue" id="NbB-Ia-aAH"/>
@@ -71,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="222" y="-197"/>
         </scene>
-        <!--Table View Controller - Edit My Movies-->
+        <!--Edit Movie View Controller - Edit My Movies-->
         <scene sceneID="QOf-B4-T3d">
             <objects>
-                <tableViewController id="lJs-zm-dOg" sceneMemberID="viewController">
+                <tableViewController id="lJs-zm-dOg" customClass="JPEditMovieViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="b8b-SJ-GBG">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,6 +101,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="movieDataChanged:" destination="lJs-zm-dOg" eventType="editingChanged" id="LzY-YF-uw5"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -121,7 +129,11 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHE-Yf-ZNj"/>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHE-Yf-ZNj">
+                                                    <connections>
+                                                        <action selector="movieDataChanged:" destination="lJs-zm-dOg" eventType="valueChanged" id="b94-1H-RBy"/>
+                                                    </connections>
+                                                </switch>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -141,6 +153,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Edit My Movies" id="9ul-78-3UQ"/>
+                    <connections>
+                        <outlet property="haveSwitch" destination="vHE-Yf-ZNj" id="9ac-7S-Q0v"/>
+                        <outlet property="movieNameField" destination="seF-2t-rve" id="1bS-aM-c8P"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEy-SR-ZFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,8 +289,19 @@
                 <relationship kind="outlet" name="movieNameField" candidateClass="UITextField"/>
             </relationships>
         </class>
+        <class className="JPEditMovieViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JPEditMovieViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="movieDataChanged:"/>
+                <relationship kind="outlet" name="haveSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="movieNameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
         <class className="JPMovieListViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JPMovieListViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="editButtonPressed:"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>

@@ -85,8 +85,8 @@
     
     [self dismissViewControllerAnimated:YES completion:nil];
     
-    //After making a change we need to refresh the list
-    [self.movieListViewController.tableView reloadData];
+//    //After making a change we need to refresh the list
+//    [self.movieListViewController.tableView reloadData];
     
 }
 @end
