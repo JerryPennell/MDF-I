@@ -229,6 +229,7 @@
             <objects>
                 <tabBarController id="rOm-Bl-iqb" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="NLD-zW-IEL"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ZBc-d6-MXy">
                         <autoresizingMask key="autoresizingMask"/>
@@ -236,17 +237,18 @@
                     </tabBar>
                     <connections>
                         <segue destination="L9V-ww-T4W" kind="relationship" relationship="viewControllers" id="Ulu-ws-Ycv"/>
+                        <segue destination="ajh-gh-pep" kind="relationship" relationship="viewControllers" id="l99-7G-XXd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aic-JR-XXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-830" y="-197"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller-->
         <scene sceneID="ekJ-Ke-Pxv">
             <objects>
                 <navigationController id="L9V-ww-T4W" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dZf-kW-blB"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="dZf-kW-blB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wbo-pH-Jnx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -260,6 +262,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPC-zf-Yrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-310" y="-197"/>
+        </scene>
+        <!--View Controller - Debug Data-->
+        <scene sceneID="3ki-w9-Ugc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sV-8C-11U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="aHP-B4-hcN" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="v5m-cF-6Pv">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Debug info will appear..." id="t7O-if-lIk">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.99325767040000001" green="1" blue="0.79012345679999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <accessibility key="accessibilityConfiguration" hint="">
+                                <accessibilityTraits key="traits" none="YES" staticText="YES"/>
+                            </accessibility>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Debug Data" id="Yrw-Qx-swr">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="XAR-bj-KkC">
+                            <connections>
+                                <segue destination="rOm-Bl-iqb" kind="modal" id="gHF-tb-UUA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="debugText" destination="t7O-if-lIk" id="LcR-yW-xOq"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="224" y="532"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NqT-dc-WZi">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ajh-gh-pep" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="ceX-tb-L0x"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b4J-tb-1mp">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aHP-B4-hcN" kind="relationship" relationship="rootViewController" id="Fko-5l-awE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1sC-x4-sSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-310" y="532"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iz6-5U-gfP">
@@ -305,6 +357,13 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doneButtonPressed:"/>
+                <relationship kind="outlet" name="debugText" candidateClass="UITextView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

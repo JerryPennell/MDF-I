@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController <NSURLConnectionDataDelegate>
+{
+    NSURLRequest *request;
+    NSURL *url;
+    NSURLConnection *connection;
+    
+    //Data coming down from the website
+    NSMutableData *requestData;
+    
+}
+
+- (IBAction)doneButtonPressed:(id)sender;
+
+@property (nonatomic, strong) IBOutlet UITextView *debugText;
 
 @end
