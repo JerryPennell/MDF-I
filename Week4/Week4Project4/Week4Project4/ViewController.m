@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     //create our url
-    url = [[NSURL alloc] initWithString:@"http://www.fullsail.edu"];
+    url = [[NSURL alloc] initWithString:@"http://imdbapi.org/?title=Finding+Nemo&type=xml"];
     
     request = [[NSURLRequest alloc] initWithURL:url];
     if (request != nil)
@@ -33,6 +33,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     //Checking validity of data
@@ -44,15 +45,29 @@
     }
     
 }
+
+
 // Called when you have all the data from the request
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     NSString *requestString = [[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding];
     if (requestString != nil)
     {
-        NSLog(@"%@", requestString);
-        
         _debugText.text = requestString;
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentDirectory = [paths objectAtIndex:0];
+        if (documentDirectory != nil)
+        {
+            NSString *fullPath = [[NSString alloc] initWithFormat:@"%@/%@", documentDirectory, @"movies.xml"];
+            if (fullPath != nil)
+            {
+                [requestData writeToFile:fullPath atomically:true];
+            }
+        }
+        
+        NSLog(@"%@", requestString);
+
         
     }
 }
@@ -63,12 +78,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-#pragma mark - IBActions
-
--(void)doneButtonPressed:(id)sender
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-}
 @end

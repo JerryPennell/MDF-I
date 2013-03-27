@@ -14,12 +14,13 @@
     NSURL *url;
     NSURLConnection *connection;
     
+    NSXMLParser *parser;
+    
     //Data coming down from the website
     NSMutableData *requestData;
     
 }
 
-- (IBAction)doneButtonPressed:(id)sender;
 
 @property (nonatomic, strong) IBOutlet UITextView *debugText;
 

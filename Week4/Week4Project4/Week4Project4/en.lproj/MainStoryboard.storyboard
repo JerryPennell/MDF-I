@@ -84,6 +84,13 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="Fpq-Cl-MUG">
+                            <rect key="frame" x="0.0" y="214" width="320" height="259"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
                         <sections>
                             <tableViewSection headerTitle="Movie Title" id="Qe0-OF-b5n">
                                 <cells>
@@ -145,6 +152,9 @@
                                         </constraints>
                                     </tableViewCell>
                                 </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="XML Output" id="IZW-aD-0ak">
+                                <cells/>
                             </tableViewSection>
                         </sections>
                         <connections>
@@ -227,7 +237,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="kKE-ej-5qx">
             <objects>
-                <tabBarController id="rOm-Bl-iqb" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="" id="rOm-Bl-iqb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="NLD-zW-IEL"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -283,25 +293,19 @@
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Debug Data" id="Yrw-Qx-swr">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="XAR-bj-KkC">
-                            <connections>
-                                <segue destination="rOm-Bl-iqb" kind="modal" id="gHF-tb-UUA"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Debug Data" id="Yrw-Qx-swr"/>
                     <connections>
                         <outlet property="debugText" destination="t7O-if-lIk" id="LcR-yW-xOq"/>
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="224" y="532"/>
+            <point key="canvasLocation" x="222" y="525"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NqT-dc-WZi">
             <objects>
                 <navigationController definesPresentationContext="YES" id="ajh-gh-pep" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="ceX-tb-L0x"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="ceX-tb-L0x"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b4J-tb-1mp">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -361,7 +365,6 @@
         <class className="ViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="action" name="doneButtonPressed:"/>
                 <relationship kind="outlet" name="debugText" candidateClass="UITextView"/>
             </relationships>
         </class>
@@ -372,6 +375,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="mFe-1L-enZ"/>
+        <segue reference="PHp-VQ-wIf"/>
     </inferredMetricsTieBreakers>
 </document>
