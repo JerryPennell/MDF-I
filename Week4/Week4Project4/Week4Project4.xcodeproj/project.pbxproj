@@ -19,6 +19,8 @@
 		E313011B17025FD600D9F530 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E313011917025FD600D9F530 /* MainStoryboard.storyboard */; };
 		E313011E17025FD600D9F530 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E313011D17025FD600D9F530 /* ViewController.m */; };
 		E31301261702682E00D9F530 /* JPMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = E31301251702682E00D9F530 /* JPMovie.m */; };
+		E313012917026BE900D9F530 /* JPMovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E313012817026BE900D9F530 /* JPMovieListViewController.m */; };
+		E313012C1702781D00D9F530 /* JPAddMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E313012B1702781D00D9F530 /* JPAddMovieViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		E313011D17025FD600D9F530 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E31301241702682E00D9F530 /* JPMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPMovie.h; sourceTree = "<group>"; };
 		E31301251702682E00D9F530 /* JPMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPMovie.m; sourceTree = "<group>"; };
+		E313012717026BE900D9F530 /* JPMovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPMovieListViewController.h; sourceTree = "<group>"; };
+		E313012817026BE900D9F530 /* JPMovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPMovieListViewController.m; sourceTree = "<group>"; };
+		E313012A1702781D00D9F530 /* JPAddMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAddMovieViewController.h; sourceTree = "<group>"; };
+		E313012B1702781D00D9F530 /* JPAddMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAddMovieViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 				E313010817025FD500D9F530 /* Supporting Files */,
 				E31301241702682E00D9F530 /* JPMovie.h */,
 				E31301251702682E00D9F530 /* JPMovie.m */,
+				E313012717026BE900D9F530 /* JPMovieListViewController.h */,
+				E313012817026BE900D9F530 /* JPMovieListViewController.m */,
+				E313012A1702781D00D9F530 /* JPAddMovieViewController.h */,
+				E313012B1702781D00D9F530 /* JPAddMovieViewController.m */,
 			);
 			path = Week4Project4;
 			sourceTree = "<group>";
@@ -182,6 +192,8 @@
 				E313011217025FD500D9F530 /* AppDelegate.m in Sources */,
 				E313011E17025FD600D9F530 /* ViewController.m in Sources */,
 				E31301261702682E00D9F530 /* JPMovie.m in Sources */,
+				E313012917026BE900D9F530 /* JPMovieListViewController.m in Sources */,
+				E313012C1702781D00D9F530 /* JPAddMovieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
