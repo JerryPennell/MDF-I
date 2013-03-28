@@ -24,6 +24,8 @@
 		E313012F170328CF00D9F530 /* JPEditMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E313012E170328CF00D9F530 /* JPEditMovieViewController.m */; };
 		E31301321703AC3000D9F530 /* movieInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E31301311703AC3000D9F530 /* movieInfo.m */; };
 		E31301351703DEF300D9F530 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E31301341703DEF300D9F530 /* XMLParser.m */; };
+		E31301431703F39900D9F530 /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = E31301421703F39900D9F530 /* 57x57.png */; };
+		E31301451703F39F00D9F530 /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = E31301441703F39F00D9F530 /* 114x114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		E31301311703AC3000D9F530 /* movieInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = movieInfo.m; sourceTree = "<group>"; };
 		E31301331703DEF300D9F530 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
 		E31301341703DEF300D9F530 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		E31301421703F39900D9F530 /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		E31301441703F39F00D9F530 /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 		E31300F517025FD500D9F530 = {
 			isa = PBXGroup;
 			children = (
+				E31301441703F39F00D9F530 /* 114x114.png */,
+				E31301421703F39900D9F530 /* 57x57.png */,
 				E313010717025FD500D9F530 /* Week4Project4 */,
 				E313010017025FD500D9F530 /* Frameworks */,
 				E31300FF17025FD500D9F530 /* Products */,
@@ -193,6 +199,8 @@
 				E313011617025FD600D9F530 /* Default@2x.png in Resources */,
 				E313011817025FD600D9F530 /* Default-568h@2x.png in Resources */,
 				E313011B17025FD600D9F530 /* MainStoryboard.storyboard in Resources */,
+				E31301431703F39900D9F530 /* 57x57.png in Resources */,
+				E31301451703F39F00D9F530 /* 114x114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +342,7 @@
 				E313012317025FD600D9F530 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
