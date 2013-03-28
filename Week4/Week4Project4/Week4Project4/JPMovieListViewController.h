@@ -9,9 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @interface JPMovieListViewController : UITableViewController
+{
+    NSURLRequest *request;
+    NSURL *url;
+    NSURLConnection *connection;
+    
+    //Data coming down from the website
+    NSMutableData *requestData;
+}
 
 @property (nonatomic, strong) NSMutableArray *movies;
 
 -(IBAction)editButtonPressed:(id)sender;
+
+
 
 @end

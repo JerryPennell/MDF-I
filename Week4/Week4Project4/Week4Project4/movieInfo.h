@@ -19,6 +19,12 @@
 
 }
 
+@property (nonatomic, retain) NSString *directorsMovie;
+@property (nonatomic, retain) NSString *writersMovie;
+@property (nonatomic, retain) NSString *imdb_urlMovie;
+@property (nonatomic, retain) NSString *titleMovie;
+@property (nonatomic, retain) NSString *ratingMovie;
+
 -(id)initWithName:(NSString*)titleOfMovie ratingOfMovie:(NSString*)ratingOfMovie;
 
 @end

@@ -10,6 +10,7 @@
 
 @implementation movieInfo
 
+@synthesize  directorsMovie, writersMovie, imdb_urlMovie, titleMovie, ratingMovie;
 
 -(id)initWithName:(NSString*)titleOfMovie ratingOfMovie:(NSString*)ratingOfMovie
 {

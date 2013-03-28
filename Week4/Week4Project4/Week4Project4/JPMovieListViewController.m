@@ -10,6 +10,8 @@
 #import "JPMovie.h"
 #import "JPAddMovieViewController.h"
 #import "JPEditMovieViewController.h"
+#import "XMLParser.h"
+#import "movieInfo.h"
 
 @interface JPMovieListViewController ()
 
@@ -51,7 +53,60 @@
 //    [self.movies addObject:needThisMovie];
 //    
 //    //Refreshing our data of movies
-//    [self.tableView reloadData]; 
+//    [self.tableView reloadData];
+    
+    
+    //create our url
+    url = [[NSURL alloc] initWithString:@"http://imdbapi.org/?title=Finding+Nemo&type=xml"];
+    
+    request = [[NSURLRequest alloc] initWithURL:url];
+    
+    if (request !=nil)
+    {
+        connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+        
+        //Creat our mutable data object
+        requestData = [NSMutableData data];
+    }
+    
+    //parse data
+    [self doParseURL:url];
+
+    
+    [self.tableView reloadData];
+
+}
+
+- (void) doParseURL:(NSURL *)urlData {
+    
+    // create and init NSXMLParser object
+    NSXMLParser *nsXmlParser = [[NSXMLParser alloc] initWithContentsOfURL:urlData];
+    
+    // create and init our delegate
+    XMLParser *parser = [[XMLParser alloc] initXMLParser];
+    
+    // set delegate
+    [nsXmlParser setDelegate:parser];
+    
+    // parsing...
+    BOOL success = [nsXmlParser parse];
+    
+    // test the result
+    if (success)
+    {
+        NSMutableArray *resultsArray1 = [parser resultsArray];
+        movieInfo *MovieInfo = [resultsArray1 objectAtIndex:0];
+        NSString *movieDetail = MovieInfo.titleMovie;
+        
+        JPMovie *needThisMovie = [[JPMovie alloc] initWithName:movieDetail needMovie:NO];
+        
+        [self.movies addObject:needThisMovie];
+        NSLog(@"Data Should be loading!");
+    }
+    else
+    {
+        NSLog(@"Error parsing document!");
+    }
 }
 
 -(void)viewWillAppear:(BOOL)animated
