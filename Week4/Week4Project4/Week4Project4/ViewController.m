@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "movieInfo.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,11 @@
 
 - (void)viewDidLoad
 {
+    numItems = 0;
+    
+    //Place to just hold our data for movies
+    movieData = [[NSMutableArray alloc] init];
+    
     [super viewDidLoad];
     
     //create our url
@@ -30,9 +36,102 @@
         requestData = [NSMutableData data];
     }
     
+   // NSData *xmlData = [self GetfileDataFromFile:@"movies.xml"];
+    
+    NSXMLParser *MovieParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+    if (MovieParser != nil)
+    {
+        [MovieParser setDelegate:self];
+        [MovieParser setShouldProcessNamespaces:NO];
+        [MovieParser setShouldReportNamespacePrefixes:NO];
+        [MovieParser setShouldResolveExternalEntities:NO];
+        [MovieParser parse];
+    }
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
+{
+   if ([elementName isEqualToString:@"IMDBDocumentList"])
+   {
+       return;
+   }
+    
+   if ([elementName isEqualToString:@"items"])
+   {
+        return;
+   }
+
+    
+   if ([elementName isEqualToString:@"rating"])
+   {
+        
+        //Is this a element
+        NSString *ratingMovie = [attributeDict valueForKey:@"rating"];
+        NSString *titleMovie = [attributeDict valueForKey:@"title"];
+        
+       
+        
+        movieInfo *movieInf = [[movieInfo alloc] initWithName:titleMovie ratingOfMovie:ratingMovie];
+        if(movieInf != nil)
+        {
+            [movieData addObject:movieInf];
+        }
+    }
+    
+  
+    
+    
+}
+
+-(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)movieStuff
+{
+    NSString *tagName =@"rating";
+    
+    if ([tagName isEqualToString:@"rating"])
+    {
+        NSLog(@"Value %@",movieStuff);
+        
+    }
+    
+    
+}
+
+-(void)parser:(NSXMLParser*)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
+{
+    if ([elementName isEqualToString:@"IMDBDocumentList"])
+    {
+        return;
+    }
+}
+
+
+
+
+-(NSData*)GetfileDataFromFile:(NSString*)filename
+{
+    NSString *filePath = nil;
+    
+    //create the filemanager
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    //get the path to the application documents directory
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    //create the fullpath to the data file
+    filePath = [documentsDirectory stringByAppendingPathComponent:filename];
+    
+    //does the path and the fileName Exist?
+    if ([fileManager fileExistsAtPath:filePath])
+    {
+        //returns back the NSData for the file
+        return [NSData dataWithContentsOfFile:filePath];
+    }
+    return nil;
+    
+}
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {

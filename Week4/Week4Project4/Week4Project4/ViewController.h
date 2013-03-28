@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController <NSURLConnectionDataDelegate>
+@interface ViewController : UITableViewController <NSURLConnectionDataDelegate, NSXMLParserDelegate>
 {
     NSURLRequest *request;
     NSURL *url;
@@ -18,6 +18,10 @@
     
     //Data coming down from the website
     NSMutableData *requestData;
+    
+    NSInteger numItems;
+    
+    NSMutableArray *movieData;
     
 }
 

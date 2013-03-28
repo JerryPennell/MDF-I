@@ -22,6 +22,7 @@
 		E313012917026BE900D9F530 /* JPMovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E313012817026BE900D9F530 /* JPMovieListViewController.m */; };
 		E313012C1702781D00D9F530 /* JPAddMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E313012B1702781D00D9F530 /* JPAddMovieViewController.m */; };
 		E313012F170328CF00D9F530 /* JPEditMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E313012E170328CF00D9F530 /* JPEditMovieViewController.m */; };
+		E31301321703AC3000D9F530 /* movieInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E31301311703AC3000D9F530 /* movieInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		E313012B1702781D00D9F530 /* JPAddMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAddMovieViewController.m; sourceTree = "<group>"; };
 		E313012D170328CF00D9F530 /* JPEditMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEditMovieViewController.h; sourceTree = "<group>"; };
 		E313012E170328CF00D9F530 /* JPEditMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEditMovieViewController.m; sourceTree = "<group>"; };
+		E31301301703AC3000D9F530 /* movieInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movieInfo.h; sourceTree = "<group>"; };
+		E31301311703AC3000D9F530 /* movieInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = movieInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				E313010817025FD500D9F530 /* Supporting Files */,
 				E31301241702682E00D9F530 /* JPMovie.h */,
 				E31301251702682E00D9F530 /* JPMovie.m */,
+				E31301301703AC3000D9F530 /* movieInfo.h */,
+				E31301311703AC3000D9F530 /* movieInfo.m */,
 				E313012717026BE900D9F530 /* JPMovieListViewController.h */,
 				E313012817026BE900D9F530 /* JPMovieListViewController.m */,
 				E313012A1702781D00D9F530 /* JPAddMovieViewController.h */,
@@ -200,6 +205,7 @@
 				E313012917026BE900D9F530 /* JPMovieListViewController.m in Sources */,
 				E313012C1702781D00D9F530 /* JPAddMovieViewController.m in Sources */,
 				E313012F170328CF00D9F530 /* JPEditMovieViewController.m in Sources */,
+				E31301321703AC3000D9F530 /* movieInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
