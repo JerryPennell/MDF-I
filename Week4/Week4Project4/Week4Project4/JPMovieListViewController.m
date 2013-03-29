@@ -11,6 +11,7 @@
 #import "JPAddMovieViewController.h"
 #import "JPEditMovieViewController.h"
 #import "XMLParser.h"
+#import "ViewController.h"
 #import "movieInfo.h"
 
 @interface JPMovieListViewController ()
@@ -20,6 +21,8 @@
 @implementation JPMovieListViewController
 
 @synthesize movies = _movies;
+@synthesize movieStuff = _movieStuff;
+@synthesize inputTitle = _inputTitle;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -47,10 +50,12 @@
 //    
 //    [self.movies addObject:movie];
 //    
+//
+    movieInfo *movie = [[movieInfo alloc] init];
+      
+      JPMovie *needThisMovie = [[JPMovie alloc] initWithName:movie.titleMovie needMovie:NO];
 //    
-//    JPMovie *needThisMovie = [[JPMovie alloc] initWithName:@"Finding Nemo" needMovie:NO];
-//    
-//    [self.movies addObject:needThisMovie];
+      [self.movies addObject:needThisMovie];
 //    
 //    //Refreshing our data of movies
 //    [self.tableView reloadData];

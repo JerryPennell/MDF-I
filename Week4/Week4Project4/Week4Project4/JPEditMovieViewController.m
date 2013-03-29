@@ -8,6 +8,7 @@
 
 #import "JPEditMovieViewController.h"
 #import "JPMovie.h"
+#import "ViewController.h"
 
 @interface JPEditMovieViewController ()
 
@@ -39,9 +40,12 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    
+    
     //Initializing fields
     self.movieNameField.text = self.movie.nameMovie;
     [self.haveSwitch setOn:self.movie.needMovie];
+    
 }
 
 - (void)didReceiveMemoryWarning

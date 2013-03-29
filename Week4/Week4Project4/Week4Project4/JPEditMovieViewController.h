@@ -20,6 +20,9 @@
 
 @property (nonatomic, strong) JPMovie *movie;
 
+@property (nonatomic, strong) IBOutlet UITextView *debugText;
+
 -(IBAction)movieDataChanged:(id)sender;
+
 
 @end

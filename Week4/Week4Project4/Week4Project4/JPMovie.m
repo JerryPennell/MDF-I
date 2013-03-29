@@ -18,8 +18,9 @@
     self = [super init];
     
     if (self) {
-        self.nameMovie = nameMovie;
+        self.nameMovie = @"Finding Nemo";
         self.needMovie = needMovie;
+        
     }
     return self;
 }

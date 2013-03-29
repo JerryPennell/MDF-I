@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class JPMovie;
+
 @interface ViewController : UITableViewController <NSURLConnectionDataDelegate, NSXMLParserDelegate>
 {
     NSURLRequest *request;
@@ -23,8 +25,12 @@
     
     NSMutableArray *movieData;
     
+    NSString *inputTitle;
+    
 }
 
+
+@property (nonatomic, strong) JPMovie *movieStuff;
 
 @property (nonatomic, strong) IBOutlet UITextView *debugText;
 

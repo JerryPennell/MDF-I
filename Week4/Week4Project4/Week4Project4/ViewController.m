@@ -8,12 +8,14 @@
 
 #import "ViewController.h"
 #import "movieInfo.h"
+#import "JPMovie.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
 
 - (void)viewDidLoad
 {
@@ -24,8 +26,18 @@
     
     [super viewDidLoad];
     
+    //movieInfo *movie = [[movieInfo alloc] init];
+    
+    NSString *title = @"Finding Nemo";
+    
+    inputTitle= [title stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+   // NSLog(@"This is data %@", inputTitle);
+    NSString *movieName = [@"http://imdbapi.org/?title=" stringByAppendingString:inputTitle
+                           ];
+    
+    movieName = [movieName stringByAppendingString:@"&type=xml"];
     //create our url
-    url = [[NSURL alloc] initWithString:@"http://imdbapi.org/?title=Finding+Nemo&type=xml"];
+    url = [[NSURL alloc] initWithString:movieName];
     
     request = [[NSURLRequest alloc] initWithURL:url];
     if (request != nil)

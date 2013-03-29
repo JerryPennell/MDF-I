@@ -10,13 +10,14 @@
 
 @implementation movieInfo
 
-@synthesize  directorsMovie, writersMovie, imdb_urlMovie, titleMovie, ratingMovie;
+@synthesize  directorsMovie, writersMovie, imdb_urlMovie, ratingMovie;
+@synthesize titleMovie = _titleMovie;
 
 -(id)initWithName:(NSString*)titleOfMovie ratingOfMovie:(NSString*)ratingOfMovie
 {
     if ((self = [super init]))
     {
-        titleMovie = titleOfMovie;
+        self.titleMovie = titleMovie;
         ratingMovie = ratingOfMovie;
         
     }

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class movieInfo;
+
 @interface JPMovieListViewController : UITableViewController
 {
     NSURLRequest *request;
@@ -20,7 +22,11 @@
 
 @property (nonatomic, strong) NSMutableArray *movies;
 
+@property (nonatomic, retain) NSString *inputTitle;
+
 -(IBAction)editButtonPressed:(id)sender;
+
+@property (nonatomic, strong) movieInfo *movieStuff;
 
 
 
